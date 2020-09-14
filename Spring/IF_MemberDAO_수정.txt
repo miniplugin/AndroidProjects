@@ -1,0 +1,5 @@
+public void delete(String userid) throws Exception;//학생 실습용
+	
+public List<MemberVO> loginMember(String user_id, String user_pw)throws Exception;
+	
+public List<MemberVO> androidMember()throws Exception;

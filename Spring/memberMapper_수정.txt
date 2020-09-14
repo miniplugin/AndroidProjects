@@ -1,0 +1,13 @@
+<!-- 학생 실습용 -->
+  <delete id="delete">
+	 delete from tbl_member where user_id = #{user_id}
+  </delete>
+  
+  <!-- 학생 실습용 -->
+  <select id="loginMember" resultType="org.edu.vo.MemberVO">
+	 select * from tbl_member where user_id = #{user_id} and user_pw = #{user_pw}
+  </select>
+  <!-- 학생 실습용 -->
+  <select id="androidMember" resultType="org.edu.vo.MemberVO">
+	 select * from tbl_member
+  </select>
