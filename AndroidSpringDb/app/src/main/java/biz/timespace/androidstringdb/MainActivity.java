@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, s, Toast.LENGTH_LONG).show();
                         //메인액티비티 로그인 인증 후 서브액티비티로 이동
                         /*if(s.equals("success")){*/ //PHP환경일때
-                        String jsonString = s.substring(s.indexOf('['), s.indexOf(']')+1);//스프링(자바)환경일때
-                        if (!jsonString.equals("[]")) {    //스프링(자바)환경일때
+                        String jsonString = s.substring(s.indexOf('{'), s.indexOf('}')+1);//스프링(자바)환경일때
+                        if (!jsonString.equals("{}")) {    //스프링(자바)환경일때
                             Intent in = new Intent(MainActivity.this, SubActivity.class);//서브액티비티클래스를 인텐트로 넣어둠.
                             startActivity(in);//인텐트 화면에 뿌려줌.
                         } else {
